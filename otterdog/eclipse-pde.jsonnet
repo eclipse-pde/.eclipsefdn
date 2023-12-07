@@ -29,7 +29,7 @@ orgs.newOrg('eclipse-pde') {
   ],
   secrets+: [
     orgs.newOrgSecret('PDE_GITLAB_API_TOKEN') {
-      value: "pass:bots/eclipse.pde/github.com/api-token",
+      value: "pass:bots/eclipse.pde/gitlab.eclipse.org/api-token",
     },
   ],
   _repositories+:: [
