@@ -2,7 +2,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse-pde') {
   settings+: {
-    billing_email: "webmaster@eclipse-foundation.org",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
     name: "Eclipse PDE",
