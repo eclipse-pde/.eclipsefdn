@@ -2,10 +2,8 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse-pde') {
   settings+: {
-    dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
     name: "Eclipse PDE",
-    two_factor_requirement: false,
     web_commit_signoff_required: false,
     workflows+: {
       default_workflow_permissions: "write",
