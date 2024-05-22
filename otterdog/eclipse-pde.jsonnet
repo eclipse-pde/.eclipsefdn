@@ -27,8 +27,6 @@ orgs.newOrg('eclipse-pde') {
     orgs.newRepo('.github') {
       allow_merge_commit: true,
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -40,8 +38,6 @@ orgs.newOrg('eclipse-pde') {
       has_discussions: true,
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -64,8 +60,6 @@ orgs.newOrg('eclipse-pde') {
       delete_branch_on_merge: false,
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         enabled: false,
@@ -88,8 +82,6 @@ orgs.newOrg('eclipse-pde') {
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         enabled: false,
