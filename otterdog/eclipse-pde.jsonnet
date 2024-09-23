@@ -54,6 +54,11 @@ orgs.newOrg('eclipse-pde') {
           requires_strict_status_checks: true,
         },
       ],
+      secrets: [
+        orgs.newRepoSecret('PDE_BOT_PAT') {
+          value: "pass:bots/eclipse.pde/github.com/token-hd5020",
+        },
+      ],
     },
     orgs.newRepo('eclipse.pde.build') {
       default_branch: "master",
