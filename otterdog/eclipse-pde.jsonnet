@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-pde') {
+orgs.newOrg('eclipse.pde', 'eclipse-pde') {
   settings+: {
     description: "",
     name: "Eclipse PDE",
