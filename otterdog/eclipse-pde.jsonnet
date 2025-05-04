@@ -35,6 +35,7 @@ orgs.newOrg('eclipse.pde', 'eclipse-pde') {
     orgs.newRepo('eclipse.pde') {
       default_branch: "master",
       allow_squash_merge: false,
+      allow_merge_commit: true,
       delete_branch_on_merge: false,
       has_discussions: true,
       has_projects: false,
