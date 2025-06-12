@@ -26,7 +26,7 @@ orgs.newOrg('eclipse.pde', 'eclipse-pde') {
   _repositories+:: [
     orgs.newRepo('.github') {
       allow_merge_commit: true,
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -36,7 +36,7 @@ orgs.newOrg('eclipse.pde', 'eclipse-pde') {
       default_branch: "master",
       allow_squash_merge: false,
       allow_merge_commit: false,
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       has_discussions: true,
       has_projects: false,
       has_wiki: false,
@@ -64,7 +64,7 @@ orgs.newOrg('eclipse.pde', 'eclipse-pde') {
     },
     orgs.newRepo('eclipse.pde.build') {
       default_branch: "master",
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -88,7 +88,7 @@ orgs.newOrg('eclipse.pde', 'eclipse-pde') {
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       web_commit_signoff_required: false,
       workflows+: {
         enabled: false,
