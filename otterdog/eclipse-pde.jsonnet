@@ -63,6 +63,7 @@ orgs.newOrg('eclipse.pde', 'eclipse-pde') {
       ],
     },
     orgs.newRepo('eclipse.pde.build') {
+      archived: true,
       default_branch: "master",
       delete_branch_on_merge: true,
       has_projects: false,
